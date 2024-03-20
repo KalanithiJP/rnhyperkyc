@@ -64,12 +64,14 @@ function App(): React.JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    
       <WebView
         originWhitelist={['*']}
-        source={{ uri: 'https://reactnative.dev/' }}
+        javaScriptEnabled={true}
+        javaScriptCanOpenWindowsAutomatically={true}
+        source={{ uri: 'https://b2b-ancrypto.payonramp.com/' }}
       />
-    </SafeAreaView>
+    
   );
 }
 
